@@ -7,23 +7,23 @@
 body {
   background-color: $Neutral-900;
   background-repeat: no-repeat;
-  background-image: url(/assets/images/background-mobile.png);
+  background-image: url(../assets/images/background-mobile.png);
   background-size: cover;
   @include sm {
     @media (min-width: #{$screen-sm-min}) {
-      background-image: url(/assets/images/background-tablet.png);
+      background-image: url(../assets/images/background-tablet.png);
     }
   }
   @include xl {
     @media (min-width: #{$screen-xl-min}) {
-      background-image: url(/assets/images/background-desktop.png);
+      background-image: url(../assets/images/background-desktop.png);
     }
   }
 }
 
 main {
   min-height: 100vh;
-  background-image: url(/assets/images/pattern-lines.svg);
+  background-image: url(../assets/images/pattern-lines.svg);
   background-repeat: no-repeat;
   position: relative;
   padding-bottom: 100px;

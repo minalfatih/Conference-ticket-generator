@@ -6,23 +6,23 @@
 body {
   background-color: hsl(248, 70%, 10%);
   background-repeat: no-repeat;
-  background-image: url(/assets/images/background-mobile.png);
+  background-image: url(../assets/images/background-mobile.png);
   background-size: cover;
 }
 @media (min-width: 576px) and (min-width: 576px) {
   body {
-    background-image: url(/assets/images/background-tablet.png);
+    background-image: url(../assets/images/background-tablet.png);
   }
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
   body {
-    background-image: url(/assets/images/background-desktop.png);
+    background-image: url(../assets/images/background-desktop.png);
   }
 }
 
 main {
   min-height: 100vh;
-  background-image: url(/assets/images/pattern-lines.svg);
+  background-image: url(../assets/images/pattern-lines.svg);
   background-repeat: no-repeat;
   position: relative;
   padding-bottom: 100px;
@@ -89,7 +89,7 @@ input[type=submit]:focus {
 }
 
 header {
-  background-image: url(/assets/images/pattern-circle.svg);
+  background-image: url(../assets/images/pattern-circle.svg);
   background-repeat: no-repeat;
   background-position: 0px -25px;
   width: 100%;
@@ -167,7 +167,7 @@ form {
           align-items: center;
   gap: 15px;
   width: 100%;
-  background-image: url(/assets/images/pattern-circle.svg);
+  background-image: url(../assets/images/pattern-circle.svg);
   background-repeat: no-repeat;
   background-position: 115% 60%;
   background-size: 100px;
@@ -419,7 +419,7 @@ form > div .note.remove {
   }
 }
 .ticket-box .ticket-img {
-  background-image: url(/assets/images/pattern-ticket.svg);
+  background-image: url(./assets/images/pattern-ticket.svg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 43%;
