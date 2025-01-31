@@ -165,6 +165,4 @@ function removeErorr(className) {
   document.getElementById(className).classList.remove("active-error");
 }
 
-console.log("amina");
-
 //# sourceMappingURL=main.js.map
