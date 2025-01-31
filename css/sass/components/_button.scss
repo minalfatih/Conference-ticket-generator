@@ -1,0 +1,30 @@
+@use "../helpers/helpers" as *;
+
+input[type="submit"] {
+  width: 90%;
+  @include sm {
+    @media (min-width: #{$screen-sm-min}) {
+      width: 60%;
+    }
+  }
+  @include lg {
+    @media (min-width: #{$screen-lg-min}) {
+      width: 35%;
+    }
+  }
+  padding: 10px;
+  background-color: $Orange-500;
+  color: $Neutral-900;
+  border: none;
+  margin-top: 10px;
+  font-weight: 500;
+  border-radius: $rounded-10;
+  -webkit-border-radius: $rounded-10;
+  -moz-border-radius: $rounded-10;
+  -ms-border-radius: $rounded-10;
+  -o-border-radius: $rounded-10;
+  &:focus {
+    border: 1px solid #000;
+    outline: 1px solid $Neutral-300;
+  }
+}

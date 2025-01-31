@@ -1,0 +1,61 @@
+@use "../helpers/helpers" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $Neutral-900;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/background-mobile.png);
+  background-size: cover;
+  @include sm {
+    @media (min-width: #{$screen-sm-min}) {
+      background-image: url(/assets/images/background-tablet.png);
+    }
+  }
+  @include xl {
+    @media (min-width: #{$screen-xl-min}) {
+      background-image: url(/assets/images/background-desktop.png);
+    }
+  }
+}
+
+main {
+  min-height: 100vh;
+  background-image: url(/assets/images/pattern-lines.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 100px;
+  @include sm {
+    @media (min-width: #{$screen-sm-min}) {
+      padding-bottom: 0;
+    }
+  }
+  .line-top {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 120px;
+    @include sm {
+      @media (min-width: #{$screen-sm-min}) {
+        position: absolute;
+        top: 55px;
+        right: 0;
+        width: auto;
+      }
+    }
+  }
+  .line-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 75%;
+    @include md {
+      @media (min-width: #{$screen-md-min}) {
+        width: auto;
+      }
+    }
+  }
+}

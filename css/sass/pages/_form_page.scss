@@ -1,0 +1,166 @@
+@use "../helpers/helpers" as *;
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  background-image: url(/assets/images/pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 115% 60%;
+  background-size: 100px;
+  @include sm {
+    @media (min-width: #{$screen-sm-min}) {
+      background-position: 77% 50%;
+      background-size: 160px;
+    }
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    @include sm {
+      @media (min-width: #{$screen-sm-min}) {
+        width: 60%;
+      }
+    }
+    @include lg {
+      @media (min-width: #{$screen-lg-min}) {
+        width: 35%;
+      }
+    }
+    .upload {
+      position: relative;
+      text-align: center;
+      color: $Neutral-300;
+      &:hover {
+        outline: 5px double $Neutral-500;
+      }
+      div {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        .icon {
+          border: 1px solid $Neutral-500;
+          background-color: hsl(245deg 19% 35% / 50%);
+          border-radius: $rounded-10;
+          -webkit-border-radius: $rounded-10;
+          -moz-border-radius: $rounded-10;
+          -ms-border-radius: $rounded-10;
+          -o-border-radius: $rounded-10;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .btns-box {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          .btn {
+            background-color: hsl(245deg 15% 58% / 30%);
+            color: $Neutral-0;
+            &#remove-img {
+              text-decoration: underline;
+            }
+            &#change-img {
+              position: relative;
+              padding: 6px 8px;
+            }
+          }
+        }
+      }
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        opacity: 0;
+      }
+      @include input-style;
+      border-width: 3px;
+      border-style: dashed;
+      &:hover {
+        background-color: hsl(245deg 19% 35% / 70%);
+      }
+      &.active-error {
+        border-color: #f44336;
+      }
+    }
+    #info-box,
+    #info-error,
+    #name-error,
+    #email-error,
+    #github-error {
+      display: flex;
+      margin-top: 6px;
+      span {
+        color: $Neutral-500;
+        font-size: 10px;
+      }
+      &.active-error {
+        display: none;
+      }
+    }
+    #info-error,
+    #name-error,
+    #email-error,
+    #github-error {
+      display: none;
+      span {
+        color: #f44336;
+      }
+      &.active-error {
+        display: block;
+      }
+    }
+    label {
+      color: $Neutral-0;
+      font-size: $font-size;
+    }
+    input {
+      outline: none;
+      padding: 7px 20px;
+      color: $Neutral-0;
+      caret-color: $Orange-500;
+      @include input-style;
+      z-index: 1000;
+      &:hover {
+        background-color: hsl(245deg 19% 35% / 70%);
+      }
+      &:focus {
+        border: 5px double $Neutral-300;
+      }
+      &.remove {
+        display: none;
+      }
+      &.active {
+        width: 35%;
+        height: 25%;
+        top: 89px;
+        left: 183px;
+      }
+    }
+    .note {
+      &.remove {
+        display: none;
+      }
+    }
+  }
+}

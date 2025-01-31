@@ -1,0 +1,52 @@
+@use "./colors" as *;
+@use "./variables" as *;
+@use "./breakPoints" as *;
+
+// media query mixin
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// transition
+@mixin transition {
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+}
+
+// input-style
+@mixin input-style {
+  border: 1px solid $Neutral-500;
+  width: 100%;
+  margin-top: 5px;
+  background-color: hsl(245deg 19% 35% / 50%);
+  border-radius: $rounded-10;
+  -webkit-border-radius: $rounded-10;
+  -moz-border-radius: $rounded-10;
+  -ms-border-radius: $rounded-10;
+  -o-border-radius: $rounded-10;
+  @include transition;
+  cursor: pointer;
+}

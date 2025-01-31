@@ -1,0 +1,530 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(248, 70%, 10%);
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/background-mobile.png);
+  background-size: cover;
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  body {
+    background-image: url(/assets/images/background-tablet.png);
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  body {
+    background-image: url(/assets/images/background-desktop.png);
+  }
+}
+
+main {
+  min-height: 100vh;
+  background-image: url(/assets/images/pattern-lines.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 100px;
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  main {
+    padding-bottom: 0;
+  }
+}
+main .line-top {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 120px;
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  main .line-top {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: auto;
+  }
+}
+main .line-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 75%;
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  main .line-bottom {
+    width: auto;
+  }
+}
+
+input[type=submit] {
+  width: 90%;
+  padding: 10px;
+  background-color: hsl(7, 88%, 67%);
+  color: hsl(248, 70%, 10%);
+  border: none;
+  margin-top: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  input[type=submit] {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  input[type=submit] {
+    width: 35%;
+  }
+}
+input[type=submit]:focus {
+  border: 1px solid #000;
+  outline: 1px solid hsl(252, 6%, 83%);
+}
+
+header {
+  background-image: url(/assets/images/pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 0px -25px;
+  width: 100%;
+  background-size: 85px;
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  header {
+    background-position: 20px -80px;
+    background-size: auto;
+  }
+}
+header h1 {
+  color: hsl(0, 0%, 100%);
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  header h1 {
+    width: 40%;
+  }
+}
+header p {
+  color: hsl(252, 6%, 83%);
+  font-size: 20px;
+}
+header .teckit-info {
+  display: none;
+  width: 100%;
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  header .teckit-info {
+    width: 45%;
+  }
+}
+header .teckit-info.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  header .teckit-info h1 {
+    width: 90%;
+  }
+}
+header .teckit-info h1 span {
+  color: hsl(7, 88%, 67%);
+  background: -webkit-gradient(linear, left top, right top, from(hsl(7, 86%, 67%)), to(hsl(0, 0%, 100%)));
+  background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header .teckit-info p {
+  width: 100%;
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  header .teckit-info p {
+    width: 60%;
+  }
+}
+header .teckit-info p span {
+  color: hsl(7, 71%, 60%);
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  width: 100%;
+  background-image: url(/assets/images/pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 115% 60%;
+  background-size: 100px;
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  form {
+    background-position: 77% 50%;
+    background-size: 160px;
+  }
+}
+form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 90%;
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  form > div {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  form > div {
+    width: 35%;
+  }
+}
+form > div .upload {
+  position: relative;
+  text-align: center;
+  color: hsl(252, 6%, 83%);
+  border: 1px solid hsl(245, 15%, 58%);
+  width: 100%;
+  margin-top: 5px;
+  background-color: hsla(245, 19%, 35%, 0.5);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  cursor: pointer;
+  border-width: 3px;
+  border-style: dashed;
+}
+form > div .upload:hover {
+  outline: 5px double hsl(245, 15%, 58%);
+}
+form > div .upload div {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+form > div .upload div .icon {
+  border: 1px solid hsl(245, 15%, 58%);
+  background-color: hsla(245, 19%, 35%, 0.5);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+}
+form > div .upload div .icon img {
+  width: 100%;
+  height: 100%;
+}
+form > div .upload div .btns-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+form > div .upload div .btns-box .btn {
+  background-color: hsla(245, 15%, 58%, 0.3);
+  color: hsl(0, 0%, 100%);
+}
+form > div .upload div .btns-box .btn#remove-img {
+  text-decoration: underline;
+}
+form > div .upload div .btns-box .btn#change-img {
+  position: relative;
+  padding: 6px 8px;
+}
+form > div .upload input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+}
+form > div .upload:hover {
+  background-color: hsla(245, 19%, 35%, 0.7);
+}
+form > div .upload.active-error {
+  border-color: #f44336;
+}
+form > div #info-box,
+form > div #info-error,
+form > div #name-error,
+form > div #email-error,
+form > div #github-error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6px;
+}
+form > div #info-box span,
+form > div #info-error span,
+form > div #name-error span,
+form > div #email-error span,
+form > div #github-error span {
+  color: hsl(245, 15%, 58%);
+  font-size: 10px;
+}
+form > div #info-box.active-error,
+form > div #info-error.active-error,
+form > div #name-error.active-error,
+form > div #email-error.active-error,
+form > div #github-error.active-error {
+  display: none;
+}
+form > div #info-error,
+form > div #name-error,
+form > div #email-error,
+form > div #github-error {
+  display: none;
+}
+form > div #info-error span,
+form > div #name-error span,
+form > div #email-error span,
+form > div #github-error span {
+  color: #f44336;
+}
+form > div #info-error.active-error,
+form > div #name-error.active-error,
+form > div #email-error.active-error,
+form > div #github-error.active-error {
+  display: block;
+}
+form > div label {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+}
+form > div input {
+  outline: none;
+  padding: 7px 20px;
+  color: hsl(0, 0%, 100%);
+  caret-color: hsl(7, 88%, 67%);
+  border: 1px solid hsl(245, 15%, 58%);
+  width: 100%;
+  margin-top: 5px;
+  background-color: hsla(245, 19%, 35%, 0.5);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  cursor: pointer;
+  z-index: 1000;
+}
+form > div input:hover {
+  background-color: hsla(245, 19%, 35%, 0.7);
+}
+form > div input:focus {
+  border: 5px double hsl(252, 6%, 83%);
+}
+form > div input.remove {
+  display: none;
+}
+form > div input.active {
+  width: 35%;
+  height: 25%;
+  top: 89px;
+  left: 183px;
+}
+form > div .note.remove {
+  display: none;
+}
+
+.ticket-box {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  .ticket-box {
+    padding: 15px;
+  }
+}
+.ticket-box .ticket-img {
+  background-image: url(/assets/images/pattern-ticket.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 43%;
+  width: 100%;
+  padding: 10px 15px;
+}
+@media (min-width: 400px) {
+  .ticket-box .ticket-img {
+    width: 80%;
+    height: 45%;
+    background-position: center;
+  }
+}
+@media (min-width: 500px) {
+  .ticket-box .ticket-img {
+    height: 55%;
+  }
+}
+@media (min-width: 550px) {
+  .ticket-box .ticket-img {
+    width: 80%;
+    height: 55%;
+    background-position: center;
+  }
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  .ticket-box .ticket-img {
+    width: 535px;
+    height: 240px;
+    padding: 15px;
+    position: relative;
+    background-position: initial;
+  }
+}
+.ticket-box .ticket-img .info img {
+  width: 30px;
+  height: 30px;
+}
+@media (min-width: 576px) {
+  .ticket-box .ticket-img .info img {
+    width: auto;
+    height: auto;
+  }
+}
+.ticket-box .ticket-img .info .date p {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 5px;
+}
+.ticket-box .ticket-img .info .date span {
+  color: hsl(252, 6%, 83%);
+}
+.ticket-box .ticket-img .user-info .user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  .ticket-box .ticket-img .user-info .user-image {
+    width: 65px;
+    height: 65px;
+  }
+}
+.ticket-box .ticket-img .user-info .name .username {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.3rem;
+  margin-bottom: 2px;
+}
+.ticket-box .ticket-img .user-info .name .github-box .github-name {
+  color: hsl(252, 6%, 83%);
+}
+.ticket-box .ticket-img #num-of-ticket {
+  position: absolute;
+  color: white;
+  font-size: 1.3rem;
+  opacity: 0.5;
+  right: -5%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -moz-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  -o-transform: translate(-50%, -50%) rotate(90deg);
+}
+@media (min-width: 400px) {
+  .ticket-box .ticket-img #num-of-ticket {
+    right: 0%;
+  }
+}
+@media (min-width: 500px) {
+  .ticket-box .ticket-img #num-of-ticket {
+    right: 5%;
+  }
+}
+@media (min-width: 576px) and (min-width: 576px) {
+  .ticket-box .ticket-img #num-of-ticket {
+    right: 0%;
+  }
+}
+.ticket-box.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */

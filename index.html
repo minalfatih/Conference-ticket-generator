@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A website for Generate a ticket using your information that you insert it in the form."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+  </head>
+  <body>
+    <main class="d-flex flex-column align-items-center">
+      <header
+        class="p-3 pt-5 p-md-0 pt-md-4 d-flex align-items-center flex-column text-center"
+      >
+        <div class="logo">
+          <img
+            class="img-fluid"
+            src="./assets/images/logo-full.svg"
+            alt="logo's icon"
+          />
+        </div>
+        <h1 class="pt-4 pt-sm-5 pb-3">
+          Your Journey to Coding Conf 2025 Starts Here!
+        </h1>
+        <p>Secure your spot at next year's biggest coding conference.</p>
+        <div
+          class="teckit-info flex-column justify-content-center align-items-center"
+        >
+          <h1 class="pt-5 pb-3">
+            Congrats, <span></span> Your ticket is ready.
+          </h1>
+          <p>
+            We've emailed your ticket to <span></span> and will send updates in
+            the run up to the event.
+          </p>
+        </div>
+      </header>
+      <div class="line-top">
+        <img
+          class="img-fluid"
+          src="./assets/images/pattern-squiggly-line-top.svg"
+          alt="pattern-squiggly-line-top"
+        />
+      </div>
+      <!-- Form starts -->
+      <form action="">
+        <div>
+          <label for="avatar">Upload Avatar</label>
+          <div
+            class="upload d-flex flex-column justify-content-center align-items-center"
+          >
+            <input type="file" name="avatar" id="avatar" />
+            <div>
+              <div class="icon overflow-hidden">
+                <img
+                  class="img-fluid avatar"
+                  src="./assets/images/icon-upload.svg"
+                  alt="icon-upload"
+                />
+              </div>
+              <p class="note m-0">Drag and drop or click to upload</p>
+            </div>
+          </div>
+          <div
+            class="justify-content-center align-items-center gap-2"
+            id="info-box"
+          >
+            <img class="img-fluid" src="./assets/images/icon-info.svg" alt="" />
+            <span>Upload your photo (JPG or PNG, max size: 500KB).</span>
+          </div>
+          <div id="info-error">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 16 16"
+            >
+              <path
+                stroke="#F44336"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"
+              />
+              <path fill="#F44336" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+              <path
+                stroke="#F44336"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.004 10.462V7.596M8 5.569v-.042"
+              />
+            </svg>
+            <span>File too large. Please upload a photo under 500KB.</span>
+          </div>
+        </div>
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" />
+          <div class="info-error" id="name-error">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 16 16"
+            >
+              <path
+                stroke="#F44336"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"
+              />
+              <path fill="#F44336" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+              <path
+                stroke="#F44336"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.004 10.462V7.596M8 5.569v-.042"
+              />
+            </svg>
+            <span>Please enter a valid name.</span>
+          </div>
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="example@email.com"
+          />
+          <div class="info-error" id="email-error">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 16 16"
+            >
+              <path
+                stroke="#F44336"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"
+              />
+              <path fill="#F44336" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+              <path
+                stroke="#F44336"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.004 10.462V7.596M8 5.569v-.042"
+              />
+            </svg>
+            <span>Please enter a valid email address.</span>
+          </div>
+        </div>
+        <div>
+          <label for="github-username ">GitHub Username</label>
+          <input
+            type="text"
+            name="github-username"
+            id="github-username"
+            placeholder="@yourusername"
+          />
+          <div class="info-error" id="github-error">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 16 16"
+            >
+              <path
+                stroke="#F44336"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"
+              />
+              <path fill="#F44336" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+              <path
+                stroke="#F44336"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.004 10.462V7.596M8 5.569v-.042"
+              />
+            </svg>
+            <span>Please enter a valid username.</span>
+          </div>
+        </div>
+        <input type="submit" value="Generate My Ticket" />
+      </form>
+      <!-- Form ends -->
+
+      <!-- Generated tickets starts -->
+      <div class="ticket-box">
+        <div class="ticket-img d-flex flex-column justify-content-between">
+          <div class="info d-flex gap-3">
+            <div class="logo pt-1 pt-sm-3">
+              <img src="/assets/images/logo-mark.svg" alt="logo-mark" />
+            </div>
+            <div class="date">
+              <p class="fs-2 fw-bold">Coding Conf</p>
+              <span>Jan 31, 2025 / Austin, TX</span>
+            </div>
+          </div>
+
+          <div class="user-info d-flex gap-3">
+            <img class="img-fluid user-image" src="" alt="user-image" />
+            <div class="name">
+              <p class="username"></p>
+              <div class="github-box d-flex gap-2">
+                <img src="./assets/images/icon-github.svg" alt="icon-github" />
+                <span class="github-name"></span>
+              </div>
+            </div>
+          </div>
+
+          <span id="num-of-ticket"></span>
+        </div>
+      </div>
+      <!-- Generated tickets ends -->
+
+      <div class="line-bottom">
+        <img
+          class="img-fluid"
+          src="./assets/images/pattern-squiggly-line-bottom.svg"
+          alt="pattern-squiggly-line-bottom"
+        />
+      </div>
+    </main>
+
+    <script src="./dist/vendor/all.min.js"></script>
+    <script src="./dist/vendor/bootstrap.bundle.min.js"></script>
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>

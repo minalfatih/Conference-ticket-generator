@@ -1,0 +1,67 @@
+@use "../helpers/helpers" as *;
+
+header {
+  background-image: url(/assets/images/pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 0px -25px;
+  width: 100%;
+  background-size: 85px;
+  @include sm {
+    @media (min-width: #{$screen-sm-min}) {
+      background-position: 20px -80px;
+      background-size: auto;
+    }
+  }
+  h1 {
+    color: $Neutral-0;
+    @include lg {
+      @media (min-width: #{$screen-lg-min}) {
+        width: 40%;
+      }
+    }
+  }
+  p {
+    color: $Neutral-300;
+    font-size: $font-size;
+  }
+  .teckit-info {
+    display: none;
+    width: 100%;
+    @include md {
+      @media (min-width: #{$screen-md-min}) {
+        width: 45%;
+      }
+    }
+    &.active {
+      display: flex;
+    }
+    h1 {
+      @include md {
+        @media (min-width: #{$screen-md-min}) {
+          width: 90%;
+        }
+      }
+      span {
+        color: $Orange-500;
+        background: linear-gradient(
+          to right,
+          hsl(7, 86%, 67%),
+          hsl(0, 0%, 100%)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    p {
+      width: 100%;
+      @include md {
+        @media (min-width: #{$screen-md-min}) {
+          width: 60%;
+        }
+      }
+      span {
+        color: $Orange-700;
+      }
+    }
+  }
+}
