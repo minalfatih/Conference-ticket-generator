@@ -419,7 +419,7 @@ form > div .note.remove {
   }
 }
 .ticket-box .ticket-img {
-  background-image: url(./assets/images/pattern-ticket.svg);
+  background-image: url(../assets/images/pattern-ticket.svg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 43%;
