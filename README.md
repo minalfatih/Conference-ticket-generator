@@ -30,7 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![form-design](/design/form.png)
+![ticket-design](/design/ticket.png)
 
 ### Links
 
