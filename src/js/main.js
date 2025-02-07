@@ -68,7 +68,7 @@ function buttons() {
 
 document.addEventListener("click", (e) => {
   if (e.target.id === "remove-img") {
-    document.querySelector(".avatar").src = "../assets/images/icon-upload.svg";
+    document.querySelector(".avatar").src = "./assets/images/icon-upload.svg";
     img = false;
     document.querySelector(".note").classList.remove("remove");
     document.querySelector(".upload input").classList.remove("remove");

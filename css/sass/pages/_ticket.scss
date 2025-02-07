@@ -25,7 +25,12 @@
       height: 45%;
       background-position: center;
     }
+    @media (min-width: 440px) {
+      width: 90%;
+      height: 50%;
+    }
     @media (min-width: 500px) {
+      width: 90%;
       height: 55%;
     }
     @media (min-width: 550px) {

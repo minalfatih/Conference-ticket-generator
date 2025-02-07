@@ -1,9 +1,10 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
+  font-family: "Barlow", serif;
   background-color: hsl(248, 70%, 10%);
   background-repeat: no-repeat;
   background-image: url(../assets/images/background-mobile.png);
@@ -59,7 +60,7 @@ main .line-bottom {
   }
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 90%;
   padding: 10px;
   background-color: hsl(7, 88%, 67%);
@@ -74,16 +75,16 @@ input[type=submit] {
   -o-border-radius: 10px;
 }
 @media (min-width: 576px) and (min-width: 576px) {
-  input[type=submit] {
+  input[type="submit"] {
     width: 60%;
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
-  input[type=submit] {
+  input[type="submit"] {
     width: 35%;
   }
 }
-input[type=submit]:focus {
+input[type="submit"]:focus {
   border: 1px solid #000;
   outline: 1px solid hsl(252, 6%, 83%);
 }
@@ -134,7 +135,13 @@ header .teckit-info.active {
 }
 header .teckit-info h1 span {
   color: hsl(7, 88%, 67%);
-  background: -webkit-gradient(linear, left top, right top, from(hsl(7, 86%, 67%)), to(hsl(0, 0%, 100%)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(hsl(7, 86%, 67%)),
+    to(hsl(0, 0%, 100%))
+  );
   background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -157,14 +164,14 @@ form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 15px;
   width: 100%;
   background-image: url(../assets/images/pattern-circle.svg);
@@ -184,14 +191,14 @@ form > div {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   width: 90%;
 }
 @media (min-width: 576px) and (min-width: 576px) {
@@ -236,14 +243,14 @@ form > div .upload div {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
 }
 form > div .upload div .icon {
@@ -259,11 +266,11 @@ form > div .upload div .icon {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 50px;
   height: 50px;
 }
@@ -277,14 +284,14 @@ form > div .upload div .btns-box {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 form > div .upload div .btns-box .btn {
   background-color: hsla(245, 15%, 58%, 0.3);
@@ -407,11 +414,11 @@ form > div .note.remove {
   height: 400px;
   padding: 10px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 @media (min-width: 576px) and (min-width: 576px) {
   .ticket-box {
@@ -433,8 +440,15 @@ form > div .note.remove {
     background-position: center;
   }
 }
+@media (min-width: 440px) {
+  .ticket-box .ticket-img {
+    width: 90%;
+    height: 50%;
+  }
+}
 @media (min-width: 500px) {
   .ticket-box .ticket-img {
+    width: 90%;
     height: 55%;
   }
 }
