@@ -1,4 +1,4 @@
-# Frontend Mentor - Conference ticket generator solution
+# Frontend Mentor - Conference ticket generator solution 🎫
 
 This is a solution to the [Conference ticket generator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/conference-ticket-generator-oq5gFIU12w). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [The solution URL](https://github.com/minalfatih/Conference-ticket-generator)
+- Live Site URL: [The live site URL](https://minalfatih.github.io/Conference-ticket-generator/)
 
 ## My process
 
